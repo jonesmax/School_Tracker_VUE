@@ -24,7 +24,7 @@
             </div> -->
 
             <div id="sched">
-                <img src="/pic (2).png" alt="Italian Trulli">
+                <img src="appImages/pic (2).png" alt="Italian Trulli">
             </div>
             
             

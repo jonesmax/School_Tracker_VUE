@@ -23,9 +23,7 @@
          
         </div>
         <transition name = "fade" appear>
-                <div class = "modal-overlay2" v-if="showModal=='trues'">
-
-        
+                <div class = "modal-overlay2" v-if="showModal2==true">
                     <div id = "addLine">
 
                         <select v-model="selected">
@@ -52,13 +50,13 @@
                         </select>
                         
                     </div>   
-                    <button  @click="showModal='false',addAssignment()">Add</button>   
-                    <button  @click="showModal='false'">Close</button>        
+                    <button  @click="showModal2=false,addAssignment()">Add</button>   
+                    <button  @click="showModal2=false">Close</button>        
                 </div>
                  
         </transition>
         <div id="buttonBottom">
-            <button  @click="showModal='trues'">+</button>  
+            <button  @click="showModal2=true">+</button>  
         </div>
 
     </div>
@@ -79,7 +77,8 @@
                 courses: [],
                 showModal: false,
                 currentDate: null,
-                counter: 0
+                counter: 0,
+                showModal2: false
 
             }
         },
