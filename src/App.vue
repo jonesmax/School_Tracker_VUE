@@ -48,10 +48,11 @@ export default {
   
   #app{
     user-select: none;
-    /* background-image: url("appImages/back.jpg"); */
+    background-image: url("/appImages/back.jpg");
     background-repeat: repeat;
     background-position-y: -200px;
     background-size: cover;
+    height: 100vh;
   }
   #comp{
     display: flex;
