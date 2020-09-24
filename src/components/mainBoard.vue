@@ -202,7 +202,7 @@ h3{
 }
 #assignment button:hover{
     cursor: pointer;
-    opacity: 60%!important;
+    opacity: 80%!important;
 
 }
 #assignment button:active{

@@ -11,7 +11,7 @@
                 <a href="https://www.facebook.com/"><img src='appImages/facebook.png' /></a>
                 <a href="https://www.youtube.com/"><img src='appImages/youtube.png' /></a>
                 <a href="https://www.reddit.com/r/londonontario/"><img src='appImages/reddit.png' /></a>
-                <a href="https://webadvisor.fanshawec.ca/WebAdvisor/WebAdvisor?TOKENIDX=2052750031&SS=LGRQ&URL=HTTPS%3A%2F%2Fwebadvisor.fanshawec.ca%3A443%2FWebAdvisor%2FWebAdvisor%3FTYPE%3DM%26PID%3DCORE-WBMAIN&CONSTITUENCY=WBST"><img src="appImages/fanshawe.jpg" /></a>
+                <a href="https://app.plex.tv/desktop"><img src="appImages/plex.png" /></a>
             </div>
 
             
