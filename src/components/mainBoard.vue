@@ -17,6 +17,7 @@
                             <h2>Assignemnt ID: {{info.id}}</h2>
                             <h2>Course ID: {{info.course_id}}</h2>
                             <h2>Assignment Name: {{info.assignment_name}}</h2>
+                            <h2>Notes: {{info.notes}}</h2>
                             <button  @click="removeAssignment(info.id)">Complete</button>  
                         </div>
             </transition>
@@ -48,7 +49,7 @@
                             <option value = 5>5</option>
                             
                         </select>
-                        
+                        <input v-model="note_feild" placeholder="Notes">
                     </div>   
                     <button  @click="showModal2=false,addAssignment()">Add</button>   
                     <button  @click="showModal2=false">Close</button>        
@@ -99,7 +100,8 @@
                     assignment_name: this.project_name_feild,
                     assignment_dueDate: this.due_date_feild,
                     assignment_status: 0,
-                    priority: this.priority_selected
+                    priority: this.priority_selected,
+                    notes: this.note_feild
                 }
                 axios.post('http://3.23.114.13/assignments', payload).then(() => {
                     this.updateTable()
@@ -227,9 +229,10 @@ h3{
     border-style: solid;
     width: 20%;
     height: 20%;
-    padding: 1%;
+    padding: 2%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .modal-overlay2 button{
     width: 60%;
     
